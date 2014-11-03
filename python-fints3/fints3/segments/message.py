@@ -1,3 +1,4 @@
+# See FinTS_3.0_Formals_2011-06-14_final_version.pdf
 from collections import OrderedDict
 from fints3.segments import FinTS3Segment
 
@@ -21,7 +22,7 @@ class FinTS3Header(FinTS3Segment):
 		self.elements['size'] = size + selfSize
 
 	def toASCII(self):
-		self.elements['size'] = str(self.elements['size']).zfill(11)
+		self.elements['size'] = str(self.elements['size']).zfill(12)
 		return super(FinTS3Header, self).toASCII()
 
 # See B.5.3
